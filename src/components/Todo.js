@@ -33,7 +33,7 @@ const Todo = ({ toggoletodo, task, completed, id, removeTodo, updateTodo }) => {
           </li>
         </CSSTransition>
       )}
-      ;
+
       <div className="Todo-buttons">
         <button onClick={() => setIsUpdate(true)}>
           <i className="fas fa-pen"></i>
