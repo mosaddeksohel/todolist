@@ -21,7 +21,7 @@ const TodoLIst = () => {
 
   return (
     <div className="TodoList">
-      <h2>Todo App with react redux</h2>
+      <h2>Todo App by Redux</h2>
       <Todoinput createdTodo={create} />
       <ul className="todo-list">
         <TransitionGroup>
