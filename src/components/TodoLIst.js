@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { CSSTransition } from "react-transition-group";
 import { TransitionGroup } from "react-transition-group";
-import { completeTodo, addTodo, removeTodo } from "../redux/action";
+import { completeTodo, addTodo, removeTodo, updateTodo } from "../redux/action";
 import Todo from "./Todo";
 import Todoinput from "./Todoinput";
 import "./TodoList.css";
@@ -14,6 +14,11 @@ const TodoLIst = () => {
   const create = (newTodo) => {
     dispatch(addTodo(newTodo));
   };
+
+  const update = (id, updatedTask) => {
+    dispatch(updateTodo({ id, updatedTask }));
+  };
+
   return (
     <div className="TodoList">
       <h2>Todo App with react redux</h2>
@@ -31,6 +36,7 @@ const TodoLIst = () => {
                     completed={todo.completed}
                     toggoletodo={() => dispatch(completeTodo(todo))}
                     removeTodo={() => dispatch(removeTodo(todo))}
+                    updateTodo={update}
                   ></Todo>
                 </CSSTransition>
               );

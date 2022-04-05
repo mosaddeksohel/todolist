@@ -15,12 +15,12 @@ const Todoinput = ({ createdTodo }) => {
       <form className="TodoInput" onSubmit={handleSubmit}>
         <input
           type="text"
-          name="Enter Your Choice"
+          placeholder="Enter Your Choice"
           id="task"
           value={task}
           onChange={(e) => setTask(e.target.value)}
         />
-        <button>Add Todo</button>
+        <button>Add List</button>
       </form>
     </div>
   );
