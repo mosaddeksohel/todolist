@@ -15,7 +15,7 @@ export const removeTodo = (todo) => ({
   payload: todo,
 });
 
-export const dateTodo = (todo) => ({
+export const updateTodo = (todo) => ({
   type: types.UPDATE_TODO,
   payload: todo,
 });

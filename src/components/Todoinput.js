@@ -15,7 +15,7 @@ const Todoinput = ({ createdTodo }) => {
       <form className="TodoInput" onSubmit={handleSubmit}>
         <input
           type="text"
-          name=""
+          name="Enter Your Choice"
           id="task"
           value={task}
           onChange={(e) => setTask(e.target.value)}
