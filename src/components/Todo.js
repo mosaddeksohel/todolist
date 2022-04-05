@@ -23,7 +23,7 @@ const Todo = ({ toggoletodo, task, completed, id, removeTodo, updateTodo }) => {
               value={update}
               onChange={(e) => setUpdate(e.target.value)}
             />
-            <button>Add Todo</button>
+            <button>Update Item</button>
           </form>
         </CSSTransition>
       ) : (
