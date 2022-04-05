@@ -5,6 +5,7 @@ import { TransitionGroup } from "react-transition-group";
 import { completeTodo } from "../redux/action";
 import Todo from "./Todo";
 import Todoinput from "./Todoinput";
+import "./TodoList.css";
 
 const TodoLIst = () => {
   const state = useSelector((state) => ({ ...state.todos }));

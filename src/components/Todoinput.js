@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./TodoInput.css";
 
 const Todoinput = ({ createdTodo }) => {
   const [task, setTask] = useState("");
