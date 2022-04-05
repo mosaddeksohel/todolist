@@ -5,9 +5,11 @@ import "./Todo.css";
 
 const Todo = ({ toggoletodo, task, completed, id }) => {
   return (
-    <TransitionGroup>
-      <CSSTransition timeout={500}>
-        <li onClick={toggoletodo}>{task}</li>
+    <TransitionGroup className={completed ? "Todo completed" : "Todo"}>
+      <CSSTransition key="normal" timeout={500} classNames="task-text">
+        <li className="Todo-task" onClick={toggoletodo}>
+          {task}
+        </li>
       </CSSTransition>
     </TransitionGroup>
   );

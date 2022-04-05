@@ -12,11 +12,12 @@ const Todoinput = ({ createdTodo }) => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form className="TodoInput" onSubmit={handleSubmit}>
         <input
           type="text"
           name=""
-          id=""
+          id="task"
+          value={task}
           onChange={(e) => setTask(e.target.value)}
         />
         <button>Add Todo</button>
